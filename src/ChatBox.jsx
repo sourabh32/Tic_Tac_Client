@@ -3,11 +3,27 @@ import React, { useState } from 'react'
 const ChatBox = ({handleMesasge}) => {
     const [msg,setMessage] = useState("")
   return (
-    <div style={{display:"flex",gap:"10px",alignItems:"center"}}>
-        <input style={{width:"90%"}} value ={msg} onChange={(e) => setMessage(e.target.value)} type="text" placeholder='Enter msg..' />
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <input
+        value={msg}
+        onChange={(e) => setMessage(e.target.value)}
+        type="text"
+        placeholder="Enter msg.."
+        style={{ marginBottom: "10px", maxWidth: "300px" }}
+    />
 
-        <button onClick={()=>{handleMesasge(msg)}} className='restart-btn' type="button">sends</button>
-    </div>
+    <button
+        onClick={() => {
+            handleMesasge(msg);
+        }}
+        className="restart-btn"
+        type="button"
+        style={{ maxWidth: "100px" }}
+    >
+        Send
+    </button>
+</div>
+
   )
 }
 
