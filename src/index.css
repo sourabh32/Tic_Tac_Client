@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik doodle shadow;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px); /* Adjust the size of each cell as needed */
+    gap: 5px;
+    max-width: 240px; /* Adjust the maximum width of the board */
+    margin: 20px auto;
+  }
+  
+  .board button {
+    width: 80px; /* Adjust the width of each button */
+    height: 80px; /* Adjust the height of each button */
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .board button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+ .main-heading{
+  font-size:3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-block: 30px;
+ }
+  
+ .board-screen{
+  background-color: #3559E0;
+  color:white;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction:column ;
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+ }
+ .turn{
+  text-align: center;
+  font-weight: semibold;
+  font-size: 2rem;
+ }
+
+
+
+/* CSS */
+.restart-btn {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.restart-btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.restart-btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.restart-btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+/* styles.css */
+
+
+
+.error {
+  color: red;
+}
+
+input {
+ width: full;
+  padding: 10px;
+  font-size: 1.2rem;
+  outline:none;
+  border-radius: 5px;
+}
+
+
