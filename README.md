@@ -18,7 +18,7 @@ Check out the live demo [here](https://tic-tac-client.vercel.app/).
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/tic-tac-toe-frontend.git
+    git clone https://github.com/your-username/Tic_Tac_Client.git
     ```
 
 2. Navigate to the project directory:
